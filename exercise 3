@@ -1,0 +1,19 @@
+def asd(students):
+    if not students:
+        return None, None
+    ih = max(students, key=students.get)
+    baga = min(students, key=students.get)
+    
+    return ih, baga
+
+
+students = {
+  'Bat': 18,
+  'Oyun': 22,
+  'Dulam': 21,
+  'Suren': 20
+}
+
+ih, baga = asd(students)
+print({ih},{baga})
+
