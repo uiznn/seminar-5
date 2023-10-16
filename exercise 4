@@ -1,0 +1,10 @@
+import numpy as np
+
+numbers = np.arange(1, 1001)
+
+q = numbers[(numbers % 3 == 0) | (numbers % 7 == 0)]
+
+result = np.sum(q)
+
+print(result)
+
